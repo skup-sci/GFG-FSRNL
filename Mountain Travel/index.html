@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mountain Travel</h1>
+        <nav>
+            <button onclick="scrollToSection('hero-section')">Home</button>
+            <button onclick="scrollToSection('tours-section')">Featured Tours</button>
+            <button onclick="scrollToSection('contact-section')">Contact Us</button>
+            <button onclick="scrollToSection('pricing-section')">Pricing</button>
+            <button onclick="scrollToSection('about-section')">About</button>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Explore the Majestic Peaks</h2>
+            <p>Embark on a journey to discover breathtaking mountain landscapes.</p>
+        </div>
+    </section>
+
+    <section class="tours" id="tours-section">
+        <h2>Featured Tours</h2>
+        <div class="tour-cards" id="tour-cards">
+            <!-- Tour cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Add your other sections with content here (e.g., Contact Us, Pricing, About) -->
+
+    <script src="script.js"></script>
+</body>
+</html>
