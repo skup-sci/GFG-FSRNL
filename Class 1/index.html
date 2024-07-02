@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button
+    onclick="getUserLocation()" >
+    Get My Location 
+   </button> 
+   <div id ="Location"></div>
+</body>
+<script>
+    function getUserLocation(){
+        alert("Hello World.")
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+    }
+</script>
+</html>
